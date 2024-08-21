@@ -33,7 +33,7 @@ This app is an online bookstore where book lovers come to read various books, ra
 ## Clone the Repository
 * To clone the repository on your local machine,navigate to a commmandline(e.g gitbash)
 * cd(change directory) to the location you want to clone to and type: git clone: 
-   <https://github.com/Olamayorrh/Bookstore.git/>.
-* Then cd to travelAndTour: cd travelAndTour .
+   <https://github.com/Olamayorrh/book_Store.git/>.
+* Then cd to book_Store: cd book_Store.
 
-* You can find the link to this project here: **VercelLink** <https://vercel.app/>
+* You can find the link to this project here: **VercelLink** <https://book-store-31qn.vercel.app/>
