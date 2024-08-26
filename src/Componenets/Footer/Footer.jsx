@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = ()=>{
     return(
-        <div className=" bg-green-400 p-5 flex  flex-col md:justify-start *:justify-center items-center gap-[20px] w-full">
+        <div className=" bg-green-400 p-5 flex  flex-col md:justify-start *:justify-center items-center gap-[20px] w-full dark:bg-red-500 ">
              <div className="flex gap-3">
                 <Link to="#"><FaFacebook /></Link>
                 <Link to="#"><FaInstagram /></Link>
@@ -12,11 +12,11 @@ const Footer = ()=>{
              </div>
 
              <div className="flex gap-5">
-                  <Link to="/"><p>Home</p></Link>
-                  <Link to="/featured"><p>Featured</p></Link>
-                  <Link to="/deals"><p>Deals</p></Link>
-                  <Link to="/reviewOutPut"><p>Reviews</p></Link>
-                  <Link to=""><p>Blogs</p></Link>
+                  <Link to="/"><p className="dark:hover:text-white">Home</p></Link>
+                  <Link to="/featured"><p className="dark:hover:text-white">Featured</p></Link>
+                  <Link to="/deals"><p className="dark:hover:text-white">Deals</p></Link>
+                  <Link to="/reviewOutPut"><p className="dark:hover:text-white">Reviews</p></Link>
+                  <Link to=""><p className="dark:hover:text-white">Blogs</p></Link>
              </div>
 
              <div>

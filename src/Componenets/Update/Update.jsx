@@ -1,7 +1,7 @@
 import img1 from "../../assets/images/ladyread.jpg"
 const Update = ()=>{
     return (
-        <div className="update w-full" style={{backgroundImage: `url(${img1})`}}>
+        <div className="update w-full dark:text-white" style={{backgroundImage: `url(${img1})`}}>
             <form className="cursor-pointer w-full  flex justify-center 2xl:justify-start pt-[250px]  2xl:pl-[250px]">
                 <div className="flex flex-col justify-center items-center p-3 gap-2 ">
                     <label htmlFor="subscribe" className="2xl:text-[40px] text-[20px] font-bold">Subscribe For Latest Update</label>

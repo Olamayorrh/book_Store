@@ -177,7 +177,7 @@ export const Datae = [
     },
     {
         id : 11,
-       title : "The figure from room 312" ,
+       title : "Room 312" ,
        book : img11,
        quantity : 1,
        price : "12",

@@ -11,7 +11,7 @@ const Deals = ()=>{
     
     
     return(
-            <div className="flex md:flex-row flex-col gap-5 justify-around  p-5 border-2">
+            <div className="flex md:flex-row flex-col gap-5 justify-around  p-5 dark:text-white">
                 
                 <div className="flex flex-col gap-5 p-6 pt-10 ">
 
@@ -36,6 +36,7 @@ const Deals = ()=>{
 
                     <h1 className="text-[30px] p-2 font-bold">Best Deal</h1>
                 
+                   
                     <div className="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-5">
 
                         {
@@ -51,15 +52,17 @@ const Deals = ()=>{
                             })
                             
                             .map((product)=>(
-                                <div className="  mb-5" key={product.id}>
-                                    <div>
-                                        <img src={product.book} className="bg-cover w-full "></img>
-                                    </div>
-                                    <div className="flex flex-col justify-center items-center p-4">
-                                        <p className="text-[20px] font-bold">{product.title}</p>
-                                        <p className="text-[20px] font-bold">${product.price}.00</p>
-                                        <p className="text-[20px] font-bold"> {product.cat}</p>
-                                        <Link to={`product/${product.id}`}><button onClick={()=>getInfo(product)} className="bg-green-400 p-2 text-white mt-2">View More</button></Link>
+                                <div className="p-[10px] rounded-xl shadow-md border w-full" key={product.id}>
+                                    <div className="  mb-5">
+                                        <div>
+                                            <img src={product.book} className="bg-cover w-full rounded-2xl"></img>
+                                        </div>
+                                        <div className="flex flex-col justify-center items-center w-full p-4">
+                                            <p className="text-[20px] font-bold">{product.title}</p>
+                                            <p className="text-[20px] font-bold">${product.price}.00</p>
+                                            <p className="text-[20px] font-bold"> {product.cat}</p>
+                                            <Link to={`product/${product.id}`}><button onClick={()=>getInfo(product)} className="bg-green-400 p-2 text-white mt-2">View More</button></Link>
+                                        </div>
                                     </div>
                                 </div>
                             ))

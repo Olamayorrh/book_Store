@@ -100,12 +100,18 @@ const Context = ({children})=>{
     },[revieew]);
     
      
-      console.log(saveReview);
+    //   dark mode activation
+
+    const [darkMode, setDarkMode] = useState(false);
+
+    const toggleDarkMode = ()=>{
+        setDarkMode(!darkMode)
+    }
       
     
     return(
 
-       <CartContext.Provider value={{cart,dispatch, Increase, Decrease,totalItem,totalPrice, searchTerm,handleSearch,info, getInfo, setLname, setBodyy, handleReview,saveReview }}>
+       <CartContext.Provider value={{cart,dispatch, Increase, Decrease,totalItem,totalPrice, searchTerm,handleSearch,info, getInfo, setLname, setBodyy, handleReview,saveReview,toggleDarkMode, darkMode}}>
 
             {children}
 

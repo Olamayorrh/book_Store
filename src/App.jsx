@@ -11,9 +11,12 @@ import ReviewOutput from "./Pages/ReviewOutput"
 import Summary from "./Pages/Summary"
 import Featured from "./Componenets/Featured/Featured"
 import Deals from "./Componenets/Deals/Deals"
+import { useContext } from "react"
+import { CartContext } from "./Features/Context"
 
 
 const App = ()=>{
+  const {darkMode} = useContext(CartContext);
    
   //     <Offer />
   //     <Featured/>
@@ -21,7 +24,8 @@ const App = ()=>{
   
 
   return (
-    <div>
+    <div className={`${darkMode && "dark"} classname="border-2 border-red-500"`}>
+    <div className="dark:bg-black ">
         
             <Nav1 />
             <Nav2 />
@@ -37,6 +41,7 @@ const App = ()=>{
 
             </Routes>
         
+    </div>
     </div>
   )
 }

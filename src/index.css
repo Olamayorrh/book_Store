@@ -3,14 +3,18 @@
 @tailwind utilities;
 
 
+/* *{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+} */
 
-
-/* #app { height: 100% }
+ /* #app { height: 100% }
 html,
 body {
   position: relative;
   height: 100%;
-}
+} 
 
 body {
   background: #eee;
@@ -19,7 +23,7 @@ body {
   color: #000;
   margin: 0;
   padding: 0;
-} */
+}  */
 
 .swiper {
   width: 100%;
@@ -53,17 +57,28 @@ body {
 
 .slick-slide > div {
   margin: 0 10px;
-  width: 450px;
+  width: 200px;
   display: flex;
   justify-items: center;
   align-items: center;
+  border: 0px solid greenyellow;
+ padding: 10px;
  
 }
 
-#slider-boxes{
-  display: flex !important;
-  gap: 10px;
+.slick-slide{
+  width: 100%;
 }
+
+
+
+
+
+/* #slider-boxes{
+   display: flex !important;
+  gap: 10px;
+  border: 2px solid red !important;
+}  */
 
 .slick-arrow:before{
   background-color: rgb(27, 207, 27);

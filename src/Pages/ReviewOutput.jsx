@@ -9,11 +9,11 @@ import { Link } from "react-router-dom";
 const ReviewOutput = ()=>{
 
     const settings = {
-    
         dots: true,
         infinite: true,
+        autoplay: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
             
@@ -57,16 +57,16 @@ const ReviewOutput = ()=>{
 
     return(
 
-        <div className="flex flex-col justify-center">
-        <div className=" px-[20px] pt-[50px]">
+        <div className="w-full flex flex-col justify-center gap-[10px] pl-[25%]">
+        <div className="">
 
-            <Slider {...settings}  >            
+            <Slider {...settings} className=" w-[80%] p-3" >            
             {
                 saveReview.map((each)=>(
-                    <div key={each.id} className=" flex  rounded-2xl border-2 md:gap-[20px] p-2">
+                    <div key={each.id} className=" flex justify-center items-center rounded-2xl border-2 md:gap-[20px] p-2  dark:text-white">
                         <img src={each.image} className="w-[100px] h-[100px] rounded-full "></img>
-                        <h1 className="text-[30px] font-bold">{each.name}</h1>
-                        <p className="font-[30px] italic">{each.body}</p>
+                        <h1 className="text-[20px] font-bold">{each.name}</h1>
+                        <p className="font-[20px] italic">{each.body}</p>
                     </div>
                 ))
             }
@@ -74,7 +74,7 @@ const ReviewOutput = ()=>{
 
              
         </div>
-          <Link to="/review"><button className="bg-green-400 text-white p-3 text-[30px] mt-[50px] mb-[30px] border border-red-400">Add Review</button></Link> 
+          <Link to="/review"><button className="bg-green-400 text-white p-3 text-[30px] mt-[50px] mb-[30px]">Add Review</button></Link> 
         </div>
     )
 };

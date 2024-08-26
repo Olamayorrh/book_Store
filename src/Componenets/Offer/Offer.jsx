@@ -25,7 +25,7 @@ const imagees = [
 
 const Offer = ()=>{
     return(
-        <div className="flex flex-col 2xl:flex-row justify-center items-center w-full p-3 ">
+        <div className="flex flex-col 2xl:flex-row justify-center items-center w-full p-3 dark:text-white border-2">
                 <div className="w-full gap-2 flex flex-col justify-start p-2 2xl:text-[25px]">
                     
                     <h1 className="2xl:text-[35px] font-bold">Up to 55% Offers</h1>
@@ -33,7 +33,7 @@ const Offer = ()=>{
                         optio vitae eveniet aliquam aut voluptate sed iur.
                     
                     </p>
-                    <button className="border-2 bg-green-400 text-white p-1 w-[150px]">Shop Now</button>
+                    <button className="border-2 bg-green-400 text-white p-1 w-[150px] dark:text-black">Shop Now</button>
                 </div>
                 
                 <div className="flex justify-center items-center gap-5 w-full p-3">

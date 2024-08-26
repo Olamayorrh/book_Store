@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
+
 import '../../../src/index.css';
 
 import imgg1 from "../../assets/images/adventure2.jpg"
@@ -28,14 +29,15 @@ const Featured = ()=>{
     return(
         <div className='flex flex-col justify-center items-center p-3 2xl:pb-[50px]'>
 
-        <h1 className='2xl:text-[30px] font-bold'>Featured Books</h1>
+        <h1 className='2xl:text-[30px] font-bold dark:text-white'>Featured Books</h1>
 
     <Swiper
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
+        
         loop={true}
-        autoplay={{delay:1000, disableOnInteraction:false}}
+        autoplay={true}
         slidesPerView={'auto'}
         coverflowEffect={{
           rotate: 50,
@@ -49,11 +51,11 @@ const Featured = ()=>{
         className="mySwiper"
       >
         
-        <div className='imgSlider w-full'>
+        <div className='imgSlider w-full dark:text-white'>
             {
                 Data.map((each)=>(
                     <SwiperSlide>
-                    <div key={each.id} className=' p-3 flex flex-col justify-center items-center text-[30px] w-full'>
+                    <div key={each.id} className=' p-3 flex flex-col justify-center items-center text-[30px] w-full border border-white'>
                         <img src={each.book} className='bg-contain'></img>
                         <p className='text-[18px]'>{each.title}</p>
                         <p className=''>{each.cat}</p>
